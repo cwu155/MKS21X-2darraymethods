@@ -31,5 +31,18 @@ public class ArrayMethods{
     return sum;
   }
 
+  //3.
+  public static int[] allRowSums(int[][] ary){
+    //returns an array of the row sums for each row of ary.
+    //Index i of the return array contains the sum of elements in row i.
+    int[] result = new int [ary.length];
+    for (int i = 0; i < ary.length; i++){
+      result[i] = rowSum(ary, i);
+    }
+    return result;
+  }
+
+
+
 
 }

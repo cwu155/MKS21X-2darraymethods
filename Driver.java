@@ -67,23 +67,23 @@ public class Driver {
 			System.out.println(++c+". You are producing a "+e.getClass().getCanonicalName()+" when calling columnSum.");
 		}
 
-		// try {
-		// 	if (!s(ArrayMethods.allRowSums(array0)).equals("[0, 10, 22]")) {
-		// 		System.out.println(++c+". You are returning the wrong array when allRowSums is called.");
-		// 		System.out.println("\tinput:          "+s(array0));
-		// 		System.out.println("\tdesired result: [0, 10, 22]");
-		// 		System.out.println("\tyour result:    "+s(ArrayMethods.allRowSums(array0)));
-		// 	}
-		// 	if (!s(ArrayMethods.allRowSums(array1)).equals("[3, 3, 3]")) {
-		// 		System.out.println(++c+". You are returning the wrong array when allRowSums is called.");
-		// 		System.out.println("\tinput:          "+s(array1));
-		// 		System.out.println("\tdesired result: [3, 3, 3]");
-		// 		System.out.println("\tyour result:    "+s(ArrayMethods.allRowSums(array1)));
-		// 	}
-		// } catch (Exception e) {
-		// 	System.out.println(++c+". You are producing a "+e.getClass().getCanonicalName()+" when calling allRowSums.");
-		// }
-    //
+		try {
+			if (!s(ArrayMethods.allRowSums(array0)).equals("[0, 10, 22]")) {
+				System.out.println(++c+". You are returning the wrong array when allRowSums is called.");
+				System.out.println("\tinput:          "+s(array0));
+				System.out.println("\tdesired result: [0, 10, 22]");
+				System.out.println("\tyour result:    "+s(ArrayMethods.allRowSums(array0)));
+			}
+			if (!s(ArrayMethods.allRowSums(array1)).equals("[3, 3, 3]")) {
+				System.out.println(++c+". You are returning the wrong array when allRowSums is called.");
+				System.out.println("\tinput:          "+s(array1));
+				System.out.println("\tdesired result: [3, 3, 3]");
+				System.out.println("\tyour result:    "+s(ArrayMethods.allRowSums(array1)));
+			}
+		} catch (Exception e) {
+			System.out.println(++c+". You are producing a "+e.getClass().getCanonicalName()+" when calling allRowSums.");
+		}
+
 		// try {
 		// 	if (!s(ArrayMethods.allColSums(array0)).equals("[4, 4, 4, 4, 4, 4, 4, 4]")) {
 		// 		System.out.println(++c+". You are returning the wrong array when allColSums is called.");
