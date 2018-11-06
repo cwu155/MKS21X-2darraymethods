@@ -100,24 +100,24 @@ public class Driver {
 		} catch (Exception e) {
 			System.out.println(++c+". You are producing a "+e.getClass().getCanonicalName()+" when calling allColSums.");
 		}
+
+		try {
+			if (ArrayMethods.isRowMagic(array0)) {
+				System.out.println(++c+". You are saying that an array is RowMagic when it isn't.");
+				System.out.println("\tinput:          "+s(array0));
+				System.out.println("\tdesired result: false");
+				System.out.println("\tyour result:    true");
+			}
+			if (!ArrayMethods.isRowMagic(array1)) {
+				System.out.println(++c+". You are saying that an array isn't RowMagic when it is.");
+				System.out.println("\tinput:          "+s(array1));
+				System.out.println("\tdesired result: true");
+				System.out.println("\tyour result:    false");
+			}
+		} catch (Exception e) {
+			System.out.println(++c+". You are producing a "+e.getClass().getCanonicalName()+" when calling isRowMagic.");
+		}
     
-		// try {
-		// 	if (ArrayMethods.isRowMagic(array0)) {
-		// 		System.out.println(++c+". You are saying that an array is RowMagic when it isn't.");
-		// 		System.out.println("\tinput:          "+s(array0));
-		// 		System.out.println("\tdesired result: false");
-		// 		System.out.println("\tyour result:    true");
-		// 	}
-		// 	if (!ArrayMethods.isRowMagic(array1)) {
-		// 		System.out.println(++c+". You are saying that an array isn't RowMagic when it is.");
-		// 		System.out.println("\tinput:          "+s(array1));
-		// 		System.out.println("\tdesired result: true");
-		// 		System.out.println("\tyour result:    false");
-		// 	}
-		// } catch (Exception e) {
-		// 	System.out.println(++c+". You are producing a "+e.getClass().getCanonicalName()+" when calling isRowMagic.");
-		// }
-    //
 		// try {
 		// 	if (ArrayMethods.isColumnMagic(array1)) {
 		// 		System.out.println(++c+". You are saying that an array is ColumnMagic when it isn't.");
