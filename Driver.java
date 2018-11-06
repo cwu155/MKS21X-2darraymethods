@@ -117,25 +117,25 @@ public class Driver {
 		} catch (Exception e) {
 			System.out.println(++c+". You are producing a "+e.getClass().getCanonicalName()+" when calling isRowMagic.");
 		}
-    
-		// try {
-		// 	if (ArrayMethods.isColumnMagic(array1)) {
-		// 		System.out.println(++c+". You are saying that an array is ColumnMagic when it isn't.");
-		// 		System.out.println("\tinput:          "+s(array1));
-		// 		System.out.println("\tdesired result: false");
-		// 		System.out.println("\tyour result:    true");
-		// 	}
-		// 	if (!ArrayMethods.isColumnMagic(array0)) {
-		// 		System.out.println(++c+". You are saying that an array isn't ColumnMagic when it is.");
-		// 		System.out.println("\tinput:          "+s(array0));
-		// 		System.out.println("\tdesired result: true");
-		// 		System.out.println("\tyour result:    false");
-		// 	}
-		// } catch (Exception e) {
-		// 	System.out.println(++c+". You are producing a "+e.getClass().getCanonicalName()+" when calling isColumnMagic.");
-		// }
-    //
-		// if (c == 0) System.out.println("Your code passed every test. Nice work.");
-		// else System.out.println("\nYou produced "+c+" unexpected result(s). Keep debugging!");
+
+		try {
+			if (ArrayMethods.isColumnMagic(array1)) {
+				System.out.println(++c+". You are saying that an array is ColumnMagic when it isn't.");
+				System.out.println("\tinput:          "+s(array1));
+				System.out.println("\tdesired result: false");
+				System.out.println("\tyour result:    true");
+			}
+			if (!ArrayMethods.isColumnMagic(array0)) {
+				System.out.println(++c+". You are saying that an array isn't ColumnMagic when it is.");
+				System.out.println("\tinput:          "+s(array0));
+				System.out.println("\tdesired result: true");
+				System.out.println("\tyour result:    false");
+			}
+		} catch (Exception e) {
+			System.out.println(++c+". You are producing a "+e.getClass().getCanonicalName()+" when calling isColumnMagic.");
+		}
+
+		if (c == 0) System.out.println("Your code passed every test. Nice work.");
+		else System.out.println("\nYou produced "+c+" unexpected result(s). Keep debugging!");
 	}
 }
