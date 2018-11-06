@@ -84,23 +84,23 @@ public class Driver {
 			System.out.println(++c+". You are producing a "+e.getClass().getCanonicalName()+" when calling allRowSums.");
 		}
 
-		// try {
-		// 	if (!s(ArrayMethods.allColSums(array0)).equals("[4, 4, 4, 4, 4, 4, 4, 4]")) {
-		// 		System.out.println(++c+". You are returning the wrong array when allColSums is called.");
-		// 		System.out.println("\tinput:          "+s(array0));
-		// 		System.out.println("\tdesired result: [4, 4, 4, 4, 4, 4, 4, 4]");
-		// 		System.out.println("\tyour result:    "+s(ArrayMethods.allColSums(array0)));
-		// 	}
-		// 	if (!s(ArrayMethods.allColSums(array1)).equals("[4, 2, 3, 0]")) {
-		// 		System.out.println(++c+". You are returning the wrong array when allColSums is called.");
-		// 		System.out.println("\tinput:          "+s(array1));
-		// 		System.out.println("\tdesired result: [4, 2, 3, 0]");
-		// 		System.out.println("\tyour result:    "+s(ArrayMethods.allColSums(array1)));
-		// 	}
-		// } catch (Exception e) {
-		// 	System.out.println(++c+". You are producing a "+e.getClass().getCanonicalName()+" when calling allColSums.");
-		// }
-    //
+		try {
+			if (!s(ArrayMethods.allColSums(array0)).equals("[4, 4, 4, 4, 4, 4, 4, 4]")) {
+				System.out.println(++c+". You are returning the wrong array when allColSums is called.");
+				System.out.println("\tinput:          "+s(array0));
+				System.out.println("\tdesired result: [4, 4, 4, 4, 4, 4, 4, 4]");
+				System.out.println("\tyour result:    "+s(ArrayMethods.allColSums(array0)));
+			}
+			if (!s(ArrayMethods.allColSums(array1)).equals("[4, 2, 3, 0]")) {
+				System.out.println(++c+". You are returning the wrong array when allColSums is called.");
+				System.out.println("\tinput:          "+s(array1));
+				System.out.println("\tdesired result: [4, 2, 3, 0]");
+				System.out.println("\tyour result:    "+s(ArrayMethods.allColSums(array1)));
+			}
+		} catch (Exception e) {
+			System.out.println(++c+". You are producing a "+e.getClass().getCanonicalName()+" when calling allColSums.");
+		}
+    
 		// try {
 		// 	if (ArrayMethods.isRowMagic(array0)) {
 		// 		System.out.println(++c+". You are saying that an array is RowMagic when it isn't.");
